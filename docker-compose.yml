@@ -2,7 +2,7 @@ version: '3.9'
 services:
   my-nginx-service:
     container_name: my-container
-    image: haroon-image:latest
+    image: fahad-image:latest
     cpus: 1.5
     mem_limit: 2048m
     ports:

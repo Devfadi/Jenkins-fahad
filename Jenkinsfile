@@ -6,7 +6,7 @@ pipeline {
     booleanParam(name: 'testing', defaultValue:true, description:'')
   }
   environment {
-    imagename = "haroon-image"
+    imagename = "fahad-image"
   }
  
   stages {
@@ -23,7 +23,7 @@ pipeline {
 
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/Haroon-liaquat/ep-test.git', branch: 'main'])
+        git([url: 'https://github.com/Devfadi/Jenkins-fahad.git', branch: 'main'])
 
       }
     }
