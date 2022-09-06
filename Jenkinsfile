@@ -6,7 +6,7 @@ pipeline {
     booleanParam(name: 'testing', defaultValue:true, description:'')
   }
   environment {
-    imagename = "fahad-image"
+    imagename = "haroon-image"
   }
  
   stages {
