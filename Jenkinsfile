@@ -5,6 +5,7 @@ pipeline {
     choice(name: 'Version', choices:['1.1.1','1.1.2','1.1.3'], description:'')
     booleanParam(name: 'testing', defaultValue:true, description:'')
   }
+  tools {dockerTool  "docker" } 
   environment {
     imagename = "haroon-image"
   }
