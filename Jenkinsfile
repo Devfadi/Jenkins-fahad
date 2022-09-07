@@ -8,8 +8,6 @@ pipeline {
   environment {
     imagename = "haroon-image"
   }
-
-  tools {dockerTool  "docker" } 
  
   stages {
    
