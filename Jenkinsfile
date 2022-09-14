@@ -41,7 +41,7 @@ pipeline {
       
       steps {
         
-        dir('../git-dockers') {
+        dir('git-dockers') {
             sh 'bash docker-compose up'
             // pwsh 'docker-compose up'
            //sh 'docker-compose up'
