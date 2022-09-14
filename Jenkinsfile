@@ -30,8 +30,8 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          sh "bash docker build -t ${imagename}:latest ."
-          // pwsh "docker build -t ${imagename}:latest ."
+          // sh "bash docker build -t ${imagename}:latest ."
+          powershell "docker build -t ${imagename}:latest ."
           // sh "sudo docker build -t ${imagename}:latest ."
          // powershell 'docker-compose up'
         }
@@ -42,8 +42,8 @@ pipeline {
       steps {
         
         dir('../git-dockers') {
-            sh 'bash docker-compose up'
-            // pwsh 'docker-compose up'
+            // sh 'bash docker-compose up'
+            powershell 'docker-compose up'
            //sh 'docker-compose up'
         }
         // powershell 'docker-compose up'
